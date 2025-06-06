@@ -17,7 +17,8 @@ export default function TabLayout() {
           backgroundColor: '#f2f2f2',
         },
         tabBarIcon: ({ focused, color, size }) => {
-          let iconName;
+          let iconName: 'people' | 'people-outline' | 'add-circle' | 'add-circle-outline' | 'home' | 'home-outline' | 'person' | 'person-outline' | 'calendar' | 'calendar-outline' | undefined;
+
           let iconColor = focused ? '#444' : '#bbb';
           if (route.name === 'groups') {
             iconName = focused ? 'people' : 'people-outline';
